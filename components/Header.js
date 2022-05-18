@@ -8,7 +8,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="fixed z-50 top-0 w-full flex justify-between items-center bg-white shadow-lg px-4  m-auto  h-24 bg-primary md:px-28 overflow-scroll">
+      <header className="fixed z-50 top-0 w-full flex justify-between items-center bg-white shadow-lg px-4  m-auto  h-24 bg-primary md:px-28">
         <div className="">
           <h1 className="text-2xl font-extrabold">
             <Link href="/">ENFT</Link>
@@ -37,7 +37,7 @@ export default function Header() {
           </button>
           <ul
             onClick={() => setnavbarOpen(!navbarOpen)}
-            className={`fixed left-0 top-24 md:top-0 bg-gray-900 md:bg-transparent right-0 min-h-screen overflow-scroll bg-primary text-white font-light pt-10 text-4xl md:text-base space-y-8 p-4 transition duration-200 transform ${
+            className={`fixed left-0 top-24 md:top-0 bg-gray-900 md:bg-transparent right-0 min-h-screen bg-primary text-white font-light pt-10 text-4xl md:text-base space-y-8 p-4 transition duration-200 transform ${
               navbarOpen ? "translate-x-0" : "translate-x-full"
             } md:relative md:flex md:min-h-0 md:space-y-0 md:space-x-6 md:p-0 md:translate-x-0 md:text-slate-800`}
           >
